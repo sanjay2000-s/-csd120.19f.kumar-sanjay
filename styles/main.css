@@ -1,22 +1,48 @@
 
-body 
-   {background-color: #806716
-   }
-h1
- {color: #801515 
- }
-h2
- {color: #61099d
- }
-a
- {color: #2eb627 
- }
+body {
+    background-color: #806716;
+    font-family: 'Big Shoulders Display', cursive;
+}
+h1 {
+    color: #801515;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+    font-family: 'Mansalva', cursive;
+}
+h2 {
+    color: #61099d;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+    font-family: 'Mansalva', cursive;
+}
+a {
+    color: #2eb627 ;
+    text-decoration: none;
+}
 .byline {
     color: rgba(255, 250, 205, 0.5); 
+    font-size: 70%;
 }
-.link
- {color: #0d4e4a 
+.link {
+    color: #0d4e4a 
  }
-#page-copyright
- {color: #a25188 
- }
+#page-copyright {
+    color: #a25188;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p.b {
+    text-indent: 3em;
+}
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.y {
+    list-style: none; 
+}
+ul {
+    list-style: square inside;
+}
