@@ -32,7 +32,7 @@ a {
     letter-spacing: 3px;
 }
 
-p.b {
+.bio p {
     text-indent: 3em;
 }
 footer {
@@ -40,7 +40,7 @@ footer {
     text-align: center;
 }
 
-.y {
+header nav ul {
     list-style: none; 
 }
 ul {
