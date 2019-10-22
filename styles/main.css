@@ -5,16 +5,24 @@ body {
 }
 h1 {
     color: #801515;
-    background-image: url("../images/gradient.png");
+    
     background-repeat: repeat-x;
     font-family: 'Mansalva', cursive;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: -webkit-linear-gradient(#eee, #097921);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 h2 {
     color: #61099d;
-    background-image: url("../images/gradient.png");
+    
     background-repeat: repeat-x;
     font-family: 'Mansalva', cursive;
+     background: -webkit-linear-gradient(#eee, #097921);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 a {
     color: #2eb627 ;
     text-decoration: none;
@@ -38,6 +46,7 @@ a {
 footer {
     font-size: 12px;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 header nav ul {
@@ -46,3 +55,42 @@ header nav ul {
 ul {
     list-style: square inside;
 }
+.width-wrap{
+    max-width: 1024px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2em;
+    padding-left:2em;
+    margin-bottom: 3em;
+    border-left:1px solid rgba(0, 0, 0, 0.3);
+    border-right:1px solid rgba(0, 0, 0, 0.3);
+    border-bottom:1px solid rgba(0, 0, 0, 0.3);
+    background-color: #f18973;
+    -moz-box-shadow: 4px 4px 4px rgba(255, 0 , 0, 0.3);
+    -webkit-box-shadow:  4px 4px 4px rgba(255, 0 , 0, 0.3);
+    box-shadow: 4px 4px 4px rgba(255, 0 , 0, 0.3);
+}
+.y {list-style: none; 
+          padding:0
+         }
+ body{ padding-top: 0;
+       padding-bottom: 0;}
+.hhhh{padding:0}
+.mugshot{ box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, .5);}
+hr {
+    width:50%;
+    min-width:300px;
+    margin-top:3em;
+    margin-bottom:2em;
+    border-left:0;
+    border-right:0;
+    border-top: 3px solid #8b0000;
+    border-bottom: 8px dotted #8b0000;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    
+}
+
+
+
