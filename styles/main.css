@@ -4,23 +4,24 @@ body {
     font-family: 'Big Shoulders Display', cursive;
 }
 h1 {
-    color: #801515;
+    color: transparent;
     
     background-repeat: repeat-x;
     font-family: 'Mansalva', cursive;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     background: -webkit-linear-gradient(#eee, #097921);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    background-clip: text;
 }
 h2 {
-    color: #61099d;
+    color: transparent;
     
     background-repeat: repeat-x;
     font-family: 'Mansalva', cursive;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
      background: -webkit-linear-gradient(#eee, #097921);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 a {
@@ -51,6 +52,7 @@ footer {
 
 header nav ul {
     list-style: none; 
+    margin: 0;
 }
 ul {
     list-style: square inside;
@@ -77,9 +79,9 @@ ul {
  body{ padding-top: 0;
        padding-bottom: 0;}
 .hhhh{padding:0}
-.mugshot{ box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, .5);}
-hr {
-    width:50%;
+.mugshot img { box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, .5);}
+footer hr {
+    width:50vw;
     min-width:300px;
     margin-top:3em;
     margin-bottom:2em;
