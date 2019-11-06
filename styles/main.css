@@ -74,8 +74,8 @@ ul {
     box-shadow: 4px 4px 4px rgba(255, 0 , 0, 0.3);
 }
 .y {list-style: none; 
-          padding:0
-         }
+    padding:0
+    }
  body{ padding-top: 0;
        padding-bottom: 0;}
 .hhhh{padding:0}
@@ -93,6 +93,54 @@ footer hr {
     border-top-left-radius: 8px;
     
 }
+*{box-sizing: border-box;
+}
+ header div{background-image: url("paperclip.png");
+            max-width:50px;
+            max-height:50px;}
 
+
+.mugshot {float: right;
+          position: relative;
+          top:-1em;
+          }
+.the {background-color: #F09A9D;}
+header nav {float: right;
+            }
+header nav li{float:left;}
+nav a { text-decoration: none;
+        padding-right: 10px; 
+        padding-top:1em;
+        padding-bottom:0.5em;
+        margin-left:1em;
+        margin-right:1em;
+        display: inline-block;
+       
+               
+}
+header {border-top-style: solid;
+        border-top-color: rgba(0, 0, 0, 0.1);
+        margin-left: -2em;
+        margin-right: -2em;
+}
+header nav {margin-left:2em;
+            margin-right:2em;
+            border-bottom-style: dotted;
+            
+            border-color: rgba(0, 0, 0, 0.3);
+            border-width:1px;
+            margin-top:-4px;
+}
+header a:hover {
+  border-top-style:solid;
+  border-width:4px;
+  border-color:yellow;
+}
+.back-to-top{text-align: right;
+             margin-right:-0.5em;
+             opacity:0.5;
+             position: sticky;
+             bottom: 3.5em;
+             }
 
 
