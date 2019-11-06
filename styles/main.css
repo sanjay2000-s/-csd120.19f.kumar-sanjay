@@ -95,7 +95,7 @@ footer hr {
 }
 *{box-sizing: border-box;
 }
- header div{background-image: url("paperclip.png");
+ header div{background-image: url("/images/paper.png");
             max-width:50px;
             max-height:50px;}
 
