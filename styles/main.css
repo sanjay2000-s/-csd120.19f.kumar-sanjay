@@ -229,8 +229,6 @@ main {
 .gallery {
     grid-column: span 2;
     width: 100%;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
 }
 .gallery-thumbnails {
     display:grid;
@@ -241,6 +239,8 @@ main {
 .gallery-thumbnails img {
     width: 100%;
     display: block;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 .row-span-2{
     grid-row: span 2;
@@ -248,8 +248,7 @@ main {
 .col-span-2{
     grid-column: span 2;
 }
-.gallery:hover {
+.gallery-thumbnails img:hover {
     filter: none;
     -webkit-filter: grayscale(0);
-  
 }
