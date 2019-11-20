@@ -44,20 +44,20 @@
         margin-top: 1em;
 
   }        
-.burger,
-.burger::before,
-.burger::after {
+    .burger,
+    .burger::before,
+    .burger::after {
        width: 24px;
        border-top: 4px solid #A70DCD;
    }
-.burger::before,
-.burger::after {
+    .burger::before,
+    .burger::after {
        content: "";
        display: block;
        position: absolute;
   }        
 
-.burger::before { top: 4px; }
-.burger::after { top: 12px; }
+    .burger::before { top: 4px; }
+    .burger::after { top: 12px; }
        
 }
