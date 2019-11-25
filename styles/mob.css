@@ -29,26 +29,30 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
+    header a {
+      border: 0;
+    }
     header a:hover
     {
         border: 0;
         text-decoration: underline;
     }
     .burger {
-        height: 16px;
-        cursor: grab;
+        height: 25px;
+        cursor: pointer;
         position: relative;
         margin-left:auto;
         margin-right:auto;
         margin-top: 1em;
-
   }        
     .burger,
     .burger::before,
     .burger::after {
-       width: 24px;
-       border-top: 4px solid #A70DCD;
+       width: 40px;
+       border-top: 5px solid #A70DCD;
    }
     .burger::before,
     .burger::after {
@@ -57,7 +61,7 @@
        position: absolute;
   }        
 
-    .burger::before { top: 4px; }
-    .burger::after { top: 12px; }
+    .burger::before { top: 5px; }
+    .burger::after { top: 15px; }
        
 }
