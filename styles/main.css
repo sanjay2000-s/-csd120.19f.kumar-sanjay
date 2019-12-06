@@ -256,3 +256,24 @@ img{
     max-width: 100%;
     height: auto;
 }
+table{
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.1);
+    padding-bottom: 3em;
+    padding-top: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 3px solid #f18973;
+    border-right: 3px solid #f18973;
+    
+}
+th{
+    background: rgba(0, 0, 0, 0.2);
+}
+tr:nth-child(odd) {background: rgba(0, 0, 0, 0.2);}
+#call1 {
+    border-top: 3px solid #f18973;
+}
+#call2 {
+    border-top: 3px solid #f18973;
+}
