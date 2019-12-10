@@ -5,6 +5,8 @@
        <link rel="stylesheet" href="styles/normalize.css">
           <link rel="stylesheet" href="styles/main.css">
           <link rel="stylesheet" href="styles/mob.css">
+          <link rel="stylesheet" href="styles/baguetteBox.css">
+          <link rel="stylesheet" href="styles/baguetteBox.js">
              <link rel="icon" href="favicon.ico" type="image/x-icon">
           <link href="https://fonts.googleapis.com/css?family=Mansalva%7CNanum+Pen+Script&display=swap" rel="stylesheet">
        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,26 +17,27 @@
     <meta name="msapplication-TileColor" content="#da2c56">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 </head>
 <body>
 
-<div class="width-wrap">     
+<div class="width-wrap">
     <header id="top">
         <nav>
-        <div class="burger">
-                </div>
+            <input type="checkbox" id="burger-toggle" name="burger-toggle">
+            <label class="burger" for="burger-toggle"></label>
+
             <ul>
-                
+
                 <li><a href="index.html">Home</a> </li>
                 <li><a href="links.html">Links</a> </li>
                 <li><a href="glossary.html">Glossary</a></li>
-                
+
             </ul>
         </nav>
     </header>
     <main>
-    
+
     <section class="bio">
         <h1>Welcome to Sanjay&#39;s CSD120 Website!</h1>
         <figure class="mugshot">
@@ -42,15 +45,15 @@
         </div>
 
         <a href="images/sanjay.jpg"><img src="images/san.jpg" alt="image of me" width="100" height="100"></a>
-        
+
         </figure>
         <p>Hey&#33; My name is Sanjay Kumar. I am currently studying Computer Programming at Sault College, Ontario.
         <br> I have always been fascinated with the technology and it has become an inseperable part of our day to day life.
         <br> So I choose this program to get an indepth knowledge about the programming.</p>
-        <p>My family, my world, consist of my father, mother and my little sister. Even I am so far from them, with help of 
+        <p>My family, my world, consist of my father, mother and my little sister. Even I am so far from them, with help of
         <br>technology it's feels like they are still with me. </p>
     </section>
-    
+
     <section class="the">
         <h2>My three favorate places in this world</h2>
         <ol type="1">
@@ -59,16 +62,16 @@
             <li>Sault Ste Marie</li>
         </ol>
    </section>
-   
+
    <section>
         <h2>Haiku</h2>
-       
+
         <p><span style="background-color:#52a8d1;">
         An old silent pond...<br>
         A frog jumps into the pond,<br>
         splash! Silence again.</span></p>
-        
-        
+
+
         <p>Autumn moonlight-<br>
         a worm digs silently<br>
         into the chestnut.</p>
@@ -80,92 +83,110 @@
         <em>by <strong>Matsuo Basho</strong></em>
         </span>
         </p>
-    </section>   
+    </section>
     <section>
     <h2>
     My Sault College Courses
     </h2>
     <table>
     <tr>
-    <th>Term
-    </th>
-    <th>Code
-    </th>
-    <th>Cource Name
-    </th>
-    </tr>
-    <tr id="call1">
-    <td rowspan="5">Fall
-    </td>
-    <td>CSD105
-    </td>
-    <td>Python
-    </td>
-    </tr>
-    <tr>
-    
-    <td>CSD120
-    </td>
-    <td>INTRODUCTION TO WEB
-    </td>
-    </tr>
-    <tr>
-    
-    <td>CSO104
-    </td>
-    <td>INTRO OS/LAN ADMIN
-    </td>
-    </tr>
-    <tr>
-   
-    <td>MTH122
-    </td>
-    <td>COMPUTER MATH
-    </td>
-    </tr>
-    <tr>
-    
-    <td>TNY130
-    </td>
-    <td>TECHNOLOGY/SOCIETY
-    </td>
-    </tr>
-    <tr id="call2">
-    <td rowspan="5">Winter
-    </td>
-    <td>CSA103
-    </td>
-    <td>Business Applications I
-    </td>
-    </tr>
-    <tr>
-    
-    <td>CSD102
-    </td>
-    <td>Programming Using C++
-    </td>
-    </tr>
-    <tr>
-    
-    <td>CSD212
-    </td>
-    <td>Web Scripting Languages
-    </td>
-    </tr>
-    <tr>
-    
-    <td>CSO102
-    </td>
-    <td>Introduction to LINUX
-    </td>
-    </tr>
-    <tr>
-    
-    <td>CST104
-    </td>
-    <td>PC Hardware and Networking
-    </td>
-    </tr>
+<th id="Term">
+Term
+</th>
+<th id="Code">
+Code
+</th>
+<th id="Course Name">
+Course Name
+</th>
+</tr>
+<tr id="call1">
+<th headers="Term" rowspan="5">
+Fall
+</th>
+<td headers="Code">
+CSD105
+</td>
+<td headers="Course Name">
+PYTHON
+</td>
+</tr>
+<tr>
+<td headers="Code">
+CSD120
+</td>
+<td headers="Course Name">
+INTRODUCTION TO WEB
+</td>
+</tr>
+<tr>
+<td headers="Code">
+CSO104
+</td>
+<td headers="Course Name">
+INTRO OS/LAN ADMIN
+</td>
+</tr>
+<tr>
+<td headers="Code">
+MTH1224
+</td>
+<td headers="Course Name">
+COMPUTER MATH
+</td>
+</tr>
+<tr>
+<td headers="Code">
+TNY130
+</td>
+<td headers="Course Name">
+TECHNOLOGY/SOCIETY
+</td>
+</tr>
+<tr id="call2">
+<td headers="Term" rowspan="5">
+<b>Winter</b>
+</th>
+<td headers="Code">
+CSA103
+</td>
+<td headers="Course Name">
+BUSINESEES APPLICATIONS I
+</td>
+</tr>
+<tr>
+<td headers="Code">
+CSD102
+</td>
+<td headers="Course Name">
+PROGRAMMING USING C++
+</td>
+</tr>
+<tr>
+<td headers="Code">
+CSD212
+</td>
+<td headers="Course Name">
+WEB SCRIPTING LANGUAGES
+</td>
+</tr>
+<tr>
+<td headers="Code">
+CSO102
+</td>
+<td headers="Course Name">
+INTRODUCTION TO LINUX
+</td>
+</tr>
+<tr>
+<td headers="Code">
+CST104
+</td>
+<td headers="Course Name">
+PC HARDWARE AND NETWORKING
+</td>
+</tr>
+
     </table>
     </section>
     <section class="gallery">
@@ -218,18 +239,63 @@
         </a>
         </div>
     </section>
-   
+    <section class="survey">
+        <h2>Survey</h2>
+        <form method="POST" action="https://formspree.io/xvogdwnk">
+            <label>What is your name?<br>
+                <input name="name_field" type="text" required>
+            </label>
+            <label>What is your email?<br>
+                <input name="email_field" type="email" required>
+            </label>
+            <label>Which integer is best?<br>
+                <input name="best_integer" type="number">
+            </label>
+            <label>Which day is best?<br>
+                <input name="best_day" type="date">
+            </label>
+            <label>Which bear is best?<br>
+                <select>
+                    <option disabled selected value></option>
+                    <option value="Black">Black</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Care">Care</option>
+                    <option value="Panda">Panda</option>
+                    <option value="Polar">Polar</option>
+                    <option value="Teddy">Teddy</option>
+                </select>
+            </label>
+            <label for="radio">Do you like radio buttons?<br>
+            <label for="yes">Yes</label>
+            <input type="radio" value="Yes" name="radio"><br>
+            <label for="No">No</label>
+             <input type="radio" value="No" name="radio"><br>
+             <label for="Non of your business?">Non of your business?</label>
+             <input type="radio" value="Non of your business?" name="radio" checked><br>
+            </label>
+            <label>What is the meaning of life?<br>
+                <textarea name="life_meaning" rows="10" cols="100" placeholder="Enter the correct answer here"></textarea>
+            </label>
+            <input type="submit" value="Send" class="button">
+
+        </form>
+    </section>
     </main>
     <footer>
      <hr>
         <blockquote>"Just because something doesn&#39;t do what you planned it to do doesn&#39;t mean it&#39;s useless".<br>
             <span class="byline"><em>&mdash;Thomas Edison</em></span></blockquote>
         <p id="page-copyright">&copy; 2019 <a class="link" href="mailto:19046617@saultcollege.ca?subject=Message%20from%20CSD120%20Website">sanjay</a></p>
-        
+
        <img src="images/sc-logo.png" sizes="70px" srcset="images/sc-logo@1.5x.png 105w, images/sc-logo@2x.png 140w, images/sc-logo@3x.png 210w, images/sc-logo@4x.png 280w" alt="logo">
     </footer>
     <div class="back-to-top"><a href="#top">&#9658;</a>
     </div>
     </div>
+    <script>
+        baguetteBox.run('.gallery-thumbnails', {
+        filter: /picsum\.photos\/id/i
+        });
+    </script>
  </body>
  </html>

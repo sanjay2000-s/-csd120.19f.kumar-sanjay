@@ -1,7 +1,7 @@
 body {
     background-color: #806716;
     font-family: 'Big Shoulders Display', cursive;
-   
+
 }
 
 h1 {
@@ -88,13 +88,13 @@ ul {
 
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .y {
     list-style: none;
     padding: 0
-    
+
 }
 
 body {
@@ -145,20 +145,20 @@ footer hr {
     float: right;
     position: relative;
     top: -1em;
-    
+
 }
 
 .the {
-   
+
     clear: right;
 }
 
 header nav ul {
-      
+
 }
 
 header nav li {
-     
+
 }
 
 nav a {
@@ -214,11 +214,11 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2em;
-    
+
 }
 .bio{
     grid-column: span 2;
-    
+
 }
 .glossary{
     grid-column: span 2;
@@ -234,7 +234,7 @@ main {
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
     width:100%
-    
+
 }
 .gallery-thumbnails img {
     width: 100%;
@@ -265,7 +265,7 @@ table{
     padding-right: 1em;
     border-left: 3px solid #f18973;
     border-right: 3px solid #f18973;
-    
+
 }
 th{
     background: rgba(0, 0, 0, 0.2);
@@ -276,4 +276,32 @@ tr:nth-child(odd) {background: rgba(0, 0, 0, 0.2);}
 }
 #call2 {
     border-top: 3px solid #f18973;
+}
+th, td {
+    border-right: 3px solid #f18973;
+}
+.survey{
+    grid-column: span 2;
+}
+form{
+    display: grid;
+}
+label{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.button{
+    margin-top: 1em;
+    justify-self: end;
+    font-size: 24px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-color: red;
+    background-color: lightblue;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+#burger-toggle{
+    display:none;
 }
