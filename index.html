@@ -6,7 +6,7 @@
           <link rel="stylesheet" href="styles/main.css">
           <link rel="stylesheet" href="styles/mob.css">
           <link rel="stylesheet" href="styles/baguetteBox.css">
-          <link rel="stylesheet" href="styles/baguetteBox.js">
+          <script src="styles/baguetteBox.js"></script>
              <link rel="icon" href="favicon.ico" type="image/x-icon">
           <link href="https://fonts.googleapis.com/css?family=Mansalva%7CNanum+Pen+Script&display=swap" rel="stylesheet">
        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -89,104 +89,53 @@
     My Sault College Courses
     </h2>
     <table>
-    <tr>
-<th id="Term">
-Term
-</th>
-<th id="Code">
-Code
-</th>
-<th id="Course Name">
-Course Name
-</th>
-</tr>
-<tr id="call1">
-<th headers="Term" rowspan="5">
-Fall
-</th>
-<td headers="Code">
-CSD105
-</td>
-<td headers="Course Name">
-PYTHON
-</td>
-</tr>
-<tr>
-<td headers="Code">
-CSD120
-</td>
-<td headers="Course Name">
-INTRODUCTION TO WEB
-</td>
-</tr>
-<tr>
-<td headers="Code">
-CSO104
-</td>
-<td headers="Course Name">
-INTRO OS/LAN ADMIN
-</td>
-</tr>
-<tr>
-<td headers="Code">
-MTH1224
-</td>
-<td headers="Course Name">
-COMPUTER MATH
-</td>
-</tr>
-<tr>
-<td headers="Code">
-TNY130
-</td>
-<td headers="Course Name">
-TECHNOLOGY/SOCIETY
-</td>
-</tr>
-<tr id="call2">
-<td headers="Term" rowspan="5">
-<b>Winter</b>
-</th>
-<td headers="Code">
-CSA103
-</td>
-<td headers="Course Name">
-BUSINESEES APPLICATIONS I
-</td>
-</tr>
-<tr>
-<td headers="Code">
-CSD102
-</td>
-<td headers="Course Name">
-PROGRAMMING USING C++
-</td>
-</tr>
-<tr>
-<td headers="Code">
-CSD212
-</td>
-<td headers="Course Name">
-WEB SCRIPTING LANGUAGES
-</td>
-</tr>
-<tr>
-<td headers="Code">
-CSO102
-</td>
-<td headers="Course Name">
-INTRODUCTION TO LINUX
-</td>
-</tr>
-<tr>
-<td headers="Code">
-CST104
-</td>
-<td headers="Course Name">
-PC HARDWARE AND NETWORKING
-</td>
-</tr>
-
+        <tr>
+            <th id="Term">Term</th>
+            <th id="Code">Code</th>
+            <th id="CourseName">Course Name</th>
+        </tr>
+        <tr id="call1">
+            <th headers="Term" rowspan="5">Fall</th>
+            <td headers="Code">CSD105</td>
+            <td headers="CourseName">PYTHON</td>
+        </tr>
+        <tr>
+            <td headers="Code">CSD120</td>
+            <td headers="CourseName">INTRODUCTION TO WEB</td>
+        </tr>
+        <tr>
+            <td headers="Code">CSO104</td>
+            <td headers="CourseName">INTRO OS/LAN ADMIN</td>
+        </tr>
+        <tr>
+            <td headers="Code">MTH1224</td>
+            <td headers="CourseName">COMPUTER MATH</td>
+        </tr>
+        <tr>
+            <td headers="Code">TNY130</td>
+            <td headers="CourseName">TECHNOLOGY/SOCIETY</td>
+        </tr>
+        <tr id="call2">
+            <th headers="Term" rowspan="5">Winter</th>
+            <td headers="Code">CSA103</td>
+            <td headers="CourseName">BUSINESEES APPLICATIONS I</td>
+        </tr>
+        <tr>
+            <td headers="Code">CSD102</td>
+            <td headers="CourseName">PROGRAMMING USING C++</td>
+        </tr>
+        <tr>
+            <td headers="Code">CSD212</td>
+            <td headers="CourseName">WEB SCRIPTING LANGUAGES</td>
+        </tr>
+        <tr>
+            <td headers="Code">CSO102</td>
+            <td headers="CourseName">INTRODUCTION TO LINUX</td>
+        </tr>
+        <tr>
+            <td headers="Code">CST104</td>
+            <td headers="CourseName">PC HARDWARE AND NETWORKING</td>
+        </tr>
     </table>
     </section>
     <section class="gallery">
@@ -242,21 +191,21 @@ PC HARDWARE AND NETWORKING
     <section class="survey">
         <h2>Survey</h2>
         <form method="POST" action="https://formspree.io/xvogdwnk">
-            <label>What is your name?<br>
-                <input name="name_field" type="text" required>
-            </label>
-            <label>What is your email?<br>
-                <input name="email_field" type="email" required>
-            </label>
-            <label>Which integer is best?<br>
-                <input name="best_integer" type="number">
-            </label>
-            <label>Which day is best?<br>
-                <input name="best_day" type="date">
-            </label>
-            <label>Which bear is best?<br>
-                <select>
-                    <option disabled selected value></option>
+            <label for="name">What is your name?</label>
+            <input id="name" name="name_field" type="text" required>
+
+            <label for="email">What is your email?</label>
+            <input id="email" name="email_field" type="email" required>
+            
+            <label for="int">Which integer is best?</label>
+            <input id="int" name="best_integer" type="number">
+            
+            <label for="day">Which day is best?</label>
+            <input id="day" name="best_day" type="date">
+
+            <label for="bear">Which bear is best?</label>
+                <select name="best_bear" id="bear">
+                    <option selected value></option>
                     <option value="Black">Black</option>
                     <option value="Brown">Brown</option>
                     <option value="Care">Care</option>
@@ -264,18 +213,19 @@ PC HARDWARE AND NETWORKING
                     <option value="Polar">Polar</option>
                     <option value="Teddy">Teddy</option>
                 </select>
+
+            <label>Do you like radio buttons?</label>
+            <label>
+                <input type="radio" value="yes" name="radio"> Yes
             </label>
-            <label for="radio">Do you like radio buttons?<br>
-            <label for="yes">Yes</label>
-            <input type="radio" value="Yes" name="radio"><br>
-            <label for="No">No</label>
-             <input type="radio" value="No" name="radio"><br>
-             <label for="Non of your business?">Non of your business?</label>
-             <input type="radio" value="Non of your business?" name="radio" checked><br>
+            <label>
+                <input type="radio" value="no" name="radio"> No
             </label>
-            <label>What is the meaning of life?<br>
-                <textarea name="life_meaning" rows="10" cols="100" placeholder="Enter the correct answer here"></textarea>
+            <label>
+                <input type="radio" value="?" name="radio" checked> None of your business
             </label>
+            <label for="life">What is the meaning of life?</label>
+            <textarea id="life" name="life_meaning" rows="10" cols="100" placeholder="Enter the correct answer here"></textarea>
             <input type="submit" value="Send" class="button">
 
         </form>

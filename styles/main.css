@@ -258,19 +258,21 @@ img{
 }
 table{
     border-collapse: collapse;
-    background: rgba(0, 0, 0, 0.1);
-    padding-bottom: 3em;
-    padding-top: 3em;
+}
+
+td, th { 
+    background: rgba(0, 0, 0, 0.05);
+    padding-bottom: .3em;
+    padding-top: .3em;
     padding-left: 1em;
     padding-right: 1em;
     border-left: 3px solid #f18973;
     border-right: 3px solid #f18973;
-
 }
 th{
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
 }
-tr:nth-child(odd) {background: rgba(0, 0, 0, 0.2);}
+tr:nth-child(odd) td {background: rgba(0, 0, 0, 0.1);}
 #call1 {
     border-top: 3px solid #f18973;
 }
